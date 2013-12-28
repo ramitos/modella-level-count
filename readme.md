@@ -17,6 +17,8 @@ Model.use(db, function(model){
 })
 
 Model.count() // => number of models
-``
+```
 
 ## license
+
+MIT
