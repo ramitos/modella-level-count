@@ -1,0 +1,41 @@
+{
+  "name": "modella-level-count",
+  "version": "0.0.1",
+  "description": "",
+  "keywords": ["modella", "level", "count"],
+  "homepage": "https://github.com/ramitos/modella-level-count",
+  "bugs": {
+    "url": "http://github.com/ramitos/modella-level-count/issues",
+    "email": "mail@sergioramos.me"
+  },
+  "licenses": [
+    {
+      "url": "https://raw.github.com/ramitos/modella-level-count/master/license",
+      "type": "MIT"
+    }
+  ],
+  "author": "Sérgio Ramos <mail@sergioramos.me> (http://sergioramos.me)",
+  "main": "src/modella-level-count.js",
+  "directories": {
+    "lib": "src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ramitos/modella-level-count.git"
+  },
+  "scripts": {
+    "test": "make test test-coveralls"
+  },
+  "devDependencies": {
+    "mocha-lcov-reporter": "0.0.x",
+    "jscoverage": "0.3.x",
+    "coveralls": "2.0.x",
+    "mocha": "1.10.x"
+  },
+  "dependencies": {
+    "type-component": "0.0.1"
+  },
+  "engines": {
+    "node": ">=0.8"
+  }
+}
