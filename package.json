@@ -1,7 +1,7 @@
 {
   "name": "modella-level-count",
-  "version": "0.0.1",
-  "description": "",
+  "version": "0.0.2",
+  "description": "keep a count index of the number of instances in a model",
   "keywords": ["modella", "level", "count"],
   "homepage": "https://github.com/ramitos/modella-level-count",
   "bugs": {
