@@ -7,7 +7,9 @@ var options = {
 }
 
 module.exports = function(db, toCount){
-  if (type(toCount) !== 'function') toCount = function(){return true}
+  if (type(toCount) !== 'function') toCount = function(){
+    return true
+  }
 
   return function(Model){
     var key = interpolate('/count/' + Model.modelName)
@@ -40,6 +42,14 @@ module.exports = function(db, toCount){
 
     Model.count = function(){
       return count
+    }
+
+    Model.count.increase = function(){
+      db.put(key, count += 1, options)
+    }
+
+    Model.count.decrease = function(){
+      db.put(key, count -= 1, options)
     }
   }
 }
